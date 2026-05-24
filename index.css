@@ -1,0 +1,143 @@
+body{
+	background-color:lightgrey;
+	text-align:center;
+}
+nav{
+	grid-area:nav;
+	background-color:#907969;
+	color:white;
+}
+main{
+	grid-area:main;
+}
+footer{
+	grid-area:footer;
+	padding:2%;
+	background-color:#907969;
+	color:white;
+	border:2px solid white;
+}
+section{
+	/* max function */
+	width:max(75%, 400px);
+	padding:2.5%;
+	border:2px solid white !important;
+	margin:2% auto;
+}
+.float{
+	float:left;
+	height:120px;
+	/* min function */
+	width:min(120px,15%);
+	background-color:white;
+	border-radius:5px;
+	margin:1%;
+	color:black;
+}
+.div{
+	height:120px;
+	width:120px;
+	background-color:chocolate;
+	border-radius:5px;
+	margin:1% 1% 7% 1%;
+	
+}
+.div2{
+	clear:both;
+	height:120px;
+	width:120px;
+	background-color:chocolate;
+	border-radius:5px;
+	margin:1%;
+	white-space:nowrap;
+	overflow:hidden;
+	/* text-overflow: ellipsis */
+	text-overflow:ellipsis;
+	
+}ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+.cm{
+	width:4cm;
+	height:4cm;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.mm{
+	width:44mm;
+	height:44mm;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.in{
+	width:1in;
+	height:1in;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.px{
+	width:100px;
+	margin:1%;
+	float:left;
+	height:100px;
+	background-color:lemonchiffon;
+}
+.pt{
+	width:20pt;
+	height:20pt;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.pc{
+	width:12pc;
+	height:12pc;
+	margin:1%;
+	float:left;
+	background-color:pink;
+}
+.em{
+	width:3em;
+	height:3em;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.vh{
+	width:12vh;
+	height:12vh;
+	margin:1%;
+	float:left;
+	background-color:lemonchiffon;
+}
+.vw{
+	width:5vw;
+	height:5vw;
+	margin:1%;
+	float:left;
+	color:pink;
+	background-color:lemonchiffon;
+}
+#sec{
+	height:500px;
+	border:5px solid pink;
+}
+/* text effect- writing-mode */
+.p{
+	position:absolute;
+	writing-mode:vertical-rl;
+}
+/* color keyword- inherit */
+span{
+	border:inherit;
+	padding:0.5%;
+}
